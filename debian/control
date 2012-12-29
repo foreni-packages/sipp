@@ -1,15 +1,25 @@
 Source: sipp
-Section: unknown
+Section: utils
 Priority: extra
 Maintainer: Devon Kearns <dookie@kali.org>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), g++, libpcap-dev
 Standards-Version: 3.9.3
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/sipp.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/sipp.git;a=summary
+Homepage: http://sipp.sourceforge.net/
+Vcs-Git: ssh://git@git.kali.org/packages/sipp.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/sipp.git;a=summary
 
 Package: sipp
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcap0.8
+Description: Traffic generator for the SIP protocol
+ SIPp is a free Open Source test tool / traffic generator 
+ for the SIP protocol. It includes a few basic SipStone user 
+ agent scenarios (UAC and UAS) and establishes and releases 
+ multiple calls with the INVITE and BYE methods. It can also 
+ reads custom XML scenario files describing from very simple 
+ to complex call flows. It features the dynamic display of 
+ statistics about running tests (call rate, round trip delay, 
+ and message statistics), periodic CSV statistics dumps, TCP 
+ and UDP over multiple sockets or multiplexed with 
+ retransmission management and dynamically adjustable call 
+ rates.

@@ -1,5 +1,5 @@
-sipp (3.3-1) unstable; urgency=low
+sipp (3.3-1kali0) kali; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release 
 
  -- Devon Kearns <dookie@kali.org>  Sat, 29 Dec 2012 06:48:41 -0700
