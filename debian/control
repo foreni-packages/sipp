@@ -2,7 +2,7 @@ Source: sipp
 Section: utils
 Priority: extra
 Maintainer: Devon Kearns <dookie@kali.org>
-Build-Depends: debhelper (>= 8.0.0), g++, libpcap-dev
+Build-Depends: debhelper (>= 8.0.0), g++, libpcap-dev, libncurses5-dev
 Standards-Version: 3.9.3
 Homepage: http://sipp.sourceforge.net/
 Vcs-Git: ssh://git@git.kali.org/packages/sipp.git
@@ -10,7 +10,7 @@ Vcs-Browser: http://git.kali.org/gitweb/?p=packages/sipp.git;a=summary
 
 Package: sipp
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libpcap0.8
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcap0.8, libncurses5
 Description: Traffic generator for the SIP protocol
  SIPp is a free Open Source test tool / traffic generator 
  for the SIP protocol. It includes a few basic SipStone user 
